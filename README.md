@@ -55,7 +55,7 @@ $response = $tracking->get($options);
 
 ####Webhooks Setup
 This library has in-built support to easily configure the webhook notifications of Aftership.
-To configure the Webhook Route, open the published configuration file.
+To configure the Webhook Route, open the published configuration file and setup the following configurations.
 
 ```
 'web_hook' => array(
