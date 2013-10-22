@@ -1,6 +1,10 @@
 {
-    "name": "abishekrsrikaanth/aftership",
+    "name": "abishekrsrikaanth/aftership-laravel",
     "description": "Laravel 4 package to integrate with After-Ship API",
+    "minimum-stability": "stable",
+    "homepage": "http://abishekrsrikaanth.github.io/aftership-php-sdk",
+    "license": "BSD-3-Clause",
+    "keywords": ["track", "ups", "usps", "fedex", "aftership", "shipping", "tracking", "dhl"],
     "authors": [
         {
             "name": "Abishek R Srikaanth",
@@ -16,6 +20,5 @@
         "psr-0": {
             "Abishekrsrikaanth\\Aftership": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
