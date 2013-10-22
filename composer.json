@@ -1,0 +1,21 @@
+{
+    "name": "abishekrsrikaanth/aftership",
+    "description": "Laravel 4 package to integrate with After-Ship API",
+    "authors": [
+        {
+            "name": "Abishek R Srikaanth",
+            "email": "abishek@technicaliti.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.x",
+        "abishekrsrikaanth/aftership-php-sdk": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Abishekrsrikaanth\\Aftership": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
