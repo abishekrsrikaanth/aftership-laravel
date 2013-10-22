@@ -1,6 +1,11 @@
 ###Laravel 4 package to Integrate with Aftership API
 ------
 
+
+[![Build Status](https://travis-ci.org/abishekrsrikaanth/aftership-laravel.png?branch=master)](https://travis-ci.org/abishekrsrikaanth/aftership-laravel)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/abishekrsrikaanth/aftership-laravel/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![endorse](https://api.coderwall.com/abishekrsrikaanth/endorsecount.png)](https://coderwall.com/abishekrsrikaanth)
+
 ####Installation
 
 **Using Composer**
