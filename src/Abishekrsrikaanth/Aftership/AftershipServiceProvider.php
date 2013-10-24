@@ -18,7 +18,7 @@ class AftershipServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('abishekrsrikaanth/aftership');
+        $this->package('abishekrsrikaanth/aftership-laravel');
         include __DIR__ . '/routes.php';
     }
 
