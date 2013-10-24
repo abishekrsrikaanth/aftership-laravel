@@ -5,21 +5,21 @@ use \Illuminate\Support\Facades\Config,
     \Illuminate\Support\Facades\Event,
     \Illuminate\Support\Facades\Queue;
 
-$webhook_enabled = Config::get('aftership::web_hook.enabled');
+$webhook_enabled = Config::get('aftership-laravel::web_hook.enabled');
 if ($webhook_enabled == true) {
-    $route_url = Config::get('aftership::web_hook.route_url');
+    $route_url = Config::get('aftership-laravel::web_hook.route_url');
     if (!empty($route_url)) {
         Route::post($route_url, function () {
-            $listener_type = Config::get('aftership::web_hook.listener.type');
-            $handler       = Config::get('aftership::web_hook.listener.handler');
+            $listener_type = Config::get('aftership-laravel::web_hook.listener.type');
+            $handler       = Config::get('aftership-laravel::web_hook.listener.handler');
             if (empty($listener_type) || empty($handler))
                 throw new Exception('Listener Configuration is incomplete.');
 
             if ($listener_type == "event") {
                 Event::fire($handler, array('data' => Input::all()));
             } elseif ($listener_type == "queue") {
-                $queue_connection = Config::get('aftership::web_hook.listener.queue_connection');
-                $queue_name       = Config::get('aftership::web_hook.listener.queue_name');
+                $queue_connection = Config::get('aftership-laravel::web_hook.listener.queue_connection');
+                $queue_name       = Config::get('aftership-laravel::web_hook.listener.queue_name');
 
                 if (empty($queue_connection)) {
                     if (empty($queue_name))

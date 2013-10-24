@@ -29,7 +29,7 @@ class AftershipServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['aftership'] = $this->app->share(function ($app) {
+        $this->app['aftership-laravel'] = $this->app->share(function ($app) {
             return new Aftership();
         });
     }
@@ -41,7 +41,7 @@ class AftershipServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('aftership');
+        return array('aftership-laravel');
     }
 
 }
