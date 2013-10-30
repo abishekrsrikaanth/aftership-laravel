@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "homepage": "http://abishekrsrikaanth.github.io/aftership-php-sdk",
     "license": "BSD-3-Clause",
-    "keywords": ["track", "ups", "usps", "fedex", "aftership", "shipping", "tracking", "dhl"],
+    "keywords": ["track", "ups", "usps", "fedex", "aftership", "shipping", "tracking", "dhl", "laravel", "laravel-4"],
     "authors": [
         {
             "name": "Abishek R Srikaanth",
