@@ -12,7 +12,7 @@
 ```
  "require": {
         ....
-        "abishekrsrikaanth/aftership-laravel": "dev-master"
+        "abishekrsrikaanth/aftership-laravel": "1.0"
     },
 ```
 
